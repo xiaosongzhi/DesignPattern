@@ -140,11 +140,11 @@ void test()
 	//delete buildingB;
 	delete agent;
 }
-
+#if 0
 int main()
 {
-
 	test();
-	while (1);
+	system("pause");
 	return 0;
 }
+#endif

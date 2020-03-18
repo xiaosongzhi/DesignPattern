@@ -147,7 +147,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="依赖倒转原则.cpp" />
+    <ClCompile Include="单例模式.cpp" />
     <ClCompile Include="开闭原则.cpp" />
+    <ClCompile Include="抽象工厂模式.cpp" />
     <ClCompile Include="迪米特法则.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,5 +1,4 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (C++设计模式.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  迪米特法则.cpp
-e:\designpattern\c++设计模式\c++设计模式\迪米特法则.cpp(110): warning C4715: “Agency::rentBuilding”: 不是所有的控件路径都返回值
+  单例模式.cpp
   C++设计模式.vcxproj -> E:\DesignPattern\C++设计模式\Debug\C++设计原则.exe
   C++设计模式.vcxproj -> E:\DesignPattern\C++设计模式\Debug\C++设计原则.pdb (Full PDB)

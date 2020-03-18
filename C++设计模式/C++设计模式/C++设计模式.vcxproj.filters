@@ -21,5 +21,14 @@
     <ClCompile Include="迪米特法则.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="依赖倒转原则.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="抽象工厂模式.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="单例模式.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
