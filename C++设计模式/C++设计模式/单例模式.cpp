@@ -69,12 +69,14 @@ public:
 	{
 		return hungery;
 	}
-
+	//正常情况下单例不需要释放，当程序运行结束后会自动释放
+#if 0
 	static void freeSpace()
 	{
-		
+		if (hungery != NULL)
+			delete hungery;
 	}
-
+#endif
 };
 HungerySingleton* HungerySingleton::hungery = new HungerySingleton;	//在main函数执行之前就已经完成创建了.
 
@@ -82,8 +84,31 @@ int main()
 {
 	SignalA::getInstance();
 
-	LazySingleton *pLazy = LazySingleton::getInstance();
-	HungerySingleton *pHungry = HungerySingleton::getInsatce();
+	LazySingleton *pLazy1 = LazySingleton::getInstance();
+	LazySingleton *pLazy2 = LazySingleton::getInstance();
+
+	if (pLazy1 == pLazy2)
+	{
+		cout << "lazy 是单例" << endl;//被打印出来了
+	}
+	else
+	{
+		cout << "lazy 不是单例" << endl;
+	}
+
+
+	HungerySingleton *pHungry1 = HungerySingleton::getInsatce();
+	HungerySingleton *pHungry2 = HungerySingleton::getInsatce();
+	
+
+	if (pHungry1 == pHungry2)
+	{
+		cout << "hungry 是单例" << endl;
+	}
+	else
+	{
+		cout << "hungry 不是单例" << endl;
+	}
 
 	system("pause");
 	return 0;
