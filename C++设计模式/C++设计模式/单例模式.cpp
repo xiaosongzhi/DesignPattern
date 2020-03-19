@@ -69,15 +69,19 @@ public:
 	{
 		return hungery;
 	}
-
+#if 0	//正常情况下不需要释放该内存，该内存会随着程序的结束自动释放
 	static void freeSpace()
 	{
-		
+		if (hungery != NULL)
+			delete hungery;
 	}
-
+#endif
 };
 HungerySingleton* HungerySingleton::hungery = new HungerySingleton;	//在main函数执行之前就已经完成创建了.
 
+//懒汉式是线程不安全的，在使用时需要枷锁
+//饿汉式是线程安全的，可直接使用
+#if 0
 int main()
 {
 	SignalA::getInstance();
@@ -88,3 +92,4 @@ int main()
 	system("pause");
 	return 0;
 }
+#endif

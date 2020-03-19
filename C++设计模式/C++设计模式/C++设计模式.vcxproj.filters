@@ -30,5 +30,8 @@
     <ClCompile Include="单例模式.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="外观模式.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
